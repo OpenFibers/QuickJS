@@ -84,6 +84,8 @@ typedef struct {
     JSValue func;
 } JSOSTimer;
 
+extern char **environ;
+
 /* initialize the lists so js_std_free_handlers() can always be called */
 static struct list_head os_rw_handlers = LIST_HEAD_INIT(os_rw_handlers);
 static struct list_head os_signal_handlers = LIST_HEAD_INIT(os_signal_handlers);
